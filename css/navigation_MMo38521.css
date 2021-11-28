@@ -17,6 +17,7 @@ ul>li>a:visited{
 }
 
 ul>li>a:link{
+    color: white;
     padding: 1%;
     text-decoration: none;
 }
