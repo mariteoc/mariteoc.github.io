@@ -1,0 +1,37 @@
+/*stylesheet for menu of navigation */
+
+nav>ul{
+    color:#f8cec8;
+    padding:1%;
+}
+
+nav>ul>li{
+    font-family: "Century Gothic";
+    display: inline;
+    padding:1%;
+}
+
+ul>li>a:visited{
+    color: white;
+    text-decoration: none ;
+}
+
+ul>li>a:link{
+    padding: 1%;
+    text-decoration: none;
+}
+
+
+ul>li>a:hover{
+    text-decoration: underline solid rgb(255, 0, 200) 3px;
+}
+
+
+div > a:link, p > a:link{
+    padding-top:50%;
+    color:rgb(255, 0, 200)
+}
+
+div > a:visited, p > a:visited{
+    color:rgb(255, 0, 200)
+}

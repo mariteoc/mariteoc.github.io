@@ -1,0 +1,81 @@
+/* stylesheet for forms */
+legend{
+    padding: 6px;
+    background-color: rgb(186, 206, 223);
+    color: rgb(0, 0, 54);
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+fieldset > div{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+
+fieldset > div > *{
+    flex: 1 1 100px;
+
+}
+
+fieldset{
+    padding: 5%;
+    margin-bottom: 15px;    
+    margin-right: 10px;
+    flex: 1 1 450px;
+}
+
+
+form{
+    padding:2%;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+}
+
+textarea{
+    position: relative;
+    left: 40%;
+}
+
+.right{
+    position: relative;
+    left: -10%;
+}
+
+input[type="submit"], input[type="reset"]{
+    position: relative;
+    left: 27%;
+    width: 20%;
+    margin-top:10px;
+    margin-left: 5px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+    padding:1%;
+    color:rgb(20, 4, 63)
+}
+
+
+ input#fname:focus:valid,
+ input#addr:focus:valid,
+ input#postal:focus:valid,
+ input#mail:focus:valid{
+    background: rgb(161, 226, 161);
+ }
+
+ input#fname:focus:invalid,
+ input#addr:focus:invalid,
+ input#postal:focus:invalid,
+ input#mail:focus:invalid{
+    background: rgb(247, 166, 99);
+ }
+
+ input#inte:invalid,
+ input[type="radio"]:focus:invalid{
+     box-shadow: 1px 1px 1px 1px #ffffff;
+ }
+ 

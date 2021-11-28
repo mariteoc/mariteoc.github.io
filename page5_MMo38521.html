@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta name="author" content="Mariana Moura">
+        <title> Music World - Join in</title>
+
+        <link rel="stylesheet" href="css/style_MMo38521.css">
+        <link rel="stylesheet" href="css/form_MMo38521.css">
+        <link rel="stylesheet" href="css/navigation_MMo38521.css">
+
+        <script src="script/form_MMo38521.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Music World</h1>
+            <p> Everything about music &#9834;&#9835;&#9836;</p>
+
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> About us</a></li>
+                <li><a href="page2_MMo38521.html">History</a></li>
+                <li><a href="page3_MMo38521.html">Music Benefits</a></li>
+                <li><a href="page4_MMo38521.html">Styles</a></li>
+                <li><a href="page5_MMo38521.html">Join us</a></li>
+            </ul>
+
+        </nav>
+        <article>
+            <h2> Join us </h1>
+            <form name="join" action="" method="GET" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Personal data</legend>
+                    <div>
+                        <label for="fname">Full Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name Last Name" size="30" required>
+                    </div>
+                    <div>
+                        <label for="tel">Telephone</label>
+                        <input type="text" name="tel" id="tel" placeholder="(xxx)xxxxxxx" size="10">
+                    </div>
+                    <div>
+                        <label for="addr"> Address</label>
+                        <input type="text" name="addr" id="addr" size="30" required>
+                    </div>
+                    <div>
+                        <label for="postal">Postal code</label>
+                        <input type="text" name="postal" id="postal" placeholder="XNX NXN" size="7" 
+                        pattern="[A-Z]{1}\d{1}[A-Z]{1}\s\d{1}[A-Z]{1}\d{1}" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" placeholder="nnnnnn@nnnn.com" size="20" required>
+                    </div>
+                    <div>
+                        <label for="birth">Birth Date</label>
+                        <input type="date" name="birth" id="birth" min="1920-01-01" max="2015-12-31" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Music World</legend>
+                    <div>
+                        <label for="inte">What are you interested about?</label>
+                        <span class="right">
+                            <input type="checkbox" name="inte" id="inte" value="news"> News
+                            <input type="checkbox" name="inte" id="inte1" value="study">Music study
+                            <input type="checkbox" name="inte" id="inte2" value="join"> Join our community
+                        </span>
+                    </div>
+                    <div>
+                        <label for="feed">Do you want give us any feedback?</label>
+                        <span class="right">
+                            <input type="radio" name="feed" id="feed" value="yes" required onclick="enableFeedback(this.value);"> Yes
+                            <input type="radio" name="feed" id="feed1" value="no" onclick="enableFeedback(this.value);"> No
+                        </span>
+                    </div>
+                    <textarea id="feedback" name="feedback" 
+                    placeholder="Type here your suggestions, comments or opinion and help us to achieve our goals" 
+                    rows="10" cols="65" required disabled></textarea>
+                </fieldset>
+                
+                    <input type="submit" value="Send" onclick="validateForm(this.form);">
+                    <input type="reset" value="Clear all inputs">
+            
+            </form>
+            
+
+        </article>
+        <footer>
+            <small>
+                <em>
+                    CSIS 1280 &copy; Mariana Moura Fall 2021
+                </em>
+            </small>
+        </footer>
+    </body>
+</html> 
